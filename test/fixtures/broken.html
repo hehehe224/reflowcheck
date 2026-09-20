@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<style>
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px sans-serif; }
+  .wide { width:540px; height:60px; background:#d24; }
+  .clip { width:120px; height:24px; overflow:hidden; white-space:nowrap; }
+  .cover { position:fixed; inset:120px auto auto 20px; width:180px; height:60px; z-index:5; background:#111; }
+  button { position:absolute; left:40px; top:135px; width:100px; height:30px; }
+</style>
+<div class="wide">Too wide</div>
+<p class="clip">This sentence is deliberately clipped without an ellipsis.</p>
+<button type="button">Blocked</button>
+<div class="cover"></div>
+</html>

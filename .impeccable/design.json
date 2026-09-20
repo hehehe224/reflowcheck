@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-21T00:00:00.000Z",
+  "title": "Design System: ReflowCheck",
+  "extensions": {
+    "colorMeta": {
+      "inspection-black": { "role": "neutral", "displayName": "Inspection Black", "canonical": "#121013" },
+      "evidence-white": { "role": "neutral", "displayName": "Evidence White", "canonical": "#f4eff2" },
+      "annotation-rose": { "role": "primary", "displayName": "Annotation Rose", "canonical": "#ff4f87" },
+      "uncertainty-amber": { "role": "secondary", "displayName": "Uncertainty Amber", "canonical": "#f0b65d" },
+      "clear-green": { "role": "secondary", "displayName": "Clear Green", "canonical": "#79d6a5" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Verdict Display", "purpose": "The report verdict only." },
+      "body": { "displayName": "Inspection Body", "purpose": "Explanations, metadata, and limitations." },
+      "evidence-label": { "displayName": "Evidence Label", "purpose": "Selectors, geometry, captions, and widths." }
+    },
+    "shadows": [
+      { "name": "evidence-lift", "value": "0 22px 54px rgba(0,0,0,.32)", "purpose": "Separate full-page captures from the inspection surface." }
+    ],
+    "motion": [
+      { "name": "state", "value": "180ms ease-out", "purpose": "Width-cell hover and focus feedback." }
+    ],
+    "breakpoints": [
+      { "name": "stacked-evidence", "value": "820px" }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "The Forensic Contact Sheet",
+    "overview": "A quiet inspection table where captured pages are the evidence and the interface exists to connect each defect to its width, selector, geometry, and next action.",
+    "keyCharacteristics": [
+      "Near-black inspection surfaces",
+      "Warm-white evidence fields",
+      "Restrained rose annotation ink",
+      "Tabular technical metadata"
+    ],
+    "rules": [
+      { "name": "The Annotation Rule", "body": "Rose identifies a defect or active inspection state; it is not decorative atmosphere.", "section": "colors" },
+      { "name": "The Evidence-Only Shadow Rule", "body": "Only screenshots receive pronounced elevation.", "section": "elevation" }
+    ],
+    "dos": [
+      "Let screenshots dominate the evidence hierarchy.",
+      "Keep findings attached to reproducible technical evidence."
+    ],
+    "donts": [
+      "Do not turn the report into a generic analytics dashboard.",
+      "Do not imply that a clear sample proves complete correctness."
+    ]
+  }
+}

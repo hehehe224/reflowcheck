@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<style>
+  body { margin:0; font:16px sans-serif; }
+  .carousel { display:flex; width:100%; overflow-x:auto; }
+  .carousel > div { flex:0 0 260px; height:80px; }
+  .ellipsis { width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+  .orb { position:fixed; width:400px; height:400px; right:-300px; pointer-events:none; opacity:.3; }
+</style>
+<div class="carousel"><div>One</div><div>Two</div><div>Three</div></div>
+<p class="ellipsis">A deliberately shortened label for demonstration</p>
+<div class="orb" aria-hidden="true"></div>
+</html>

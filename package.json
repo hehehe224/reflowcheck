@@ -1,0 +1,52 @@
+{
+  "name": "reflowcheck",
+  "version": "0.1.0",
+  "description": "Find responsive layout bugs across viewport widths without screenshot baselines.",
+  "type": "module",
+  "bin": {
+    "reflowcheck": "./bin/reflowcheck.js"
+  },
+  "exports": {
+    ".": "./src/scan.js",
+    "./report": "./src/report.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "TRADEMARKS.md"
+  ],
+  "scripts": {
+    "check": "node --check bin/reflowcheck.js && node --check src/analyze.js && node --check src/options.js && node --check src/report.js && node --check src/scan.js",
+    "test": "node --test",
+    "test:integration": "REFLOWCHECK_INTEGRATION=1 node --test test/integration.test.js",
+    "prepack": "npm run check && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "responsive-design",
+    "playwright",
+    "layout-testing",
+    "visual-testing",
+    "horizontal-overflow",
+    "frontend",
+    "ci"
+  ],
+  "author": "Lena",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hehehe224/reflowcheck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hehehe224/reflowcheck/issues"
+  },
+  "homepage": "https://github.com/hehehe224/reflowcheck#readme",
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
