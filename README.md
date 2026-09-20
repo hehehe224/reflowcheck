@@ -113,7 +113,7 @@ Build the site first, serve it on a predictable local port, and then run ReflowC
 
 - name: Upload responsive evidence
   if: always()
-  uses: actions/upload-artifact@v4
+  uses: actions/upload-artifact@v7
   with:
     name: reflowcheck-report
     path: artifacts/reflowcheck
